@@ -1,0 +1,34 @@
+﻿@model WebApplication1.Models.Customer
+
+<h2>Müşteri Ekleme sayfası</h2>
+<br />
+
+<div>
+	<form method="post" class="form-group">
+		<div>
+			<label>Müşteri Ad</label>
+			@Html.TextBoxFor(x => x.customerName, new { @class = "form-control", @required = "" })
+		</div>
+		<div>
+			<label>Müşteri Soyad</label>
+			@Html.TextBoxFor(x => x.customerSurname, new { @class = "form-control", @required = "" })
+		</div>
+		<div>
+			<label>Yaş</label>
+			@Html.TextBoxFor(x => x.customerAge, new { @class = "form-control", @required = "" })
+		</div>
+		<div>
+			<label>Cinsiyet</label>
+			@Html.TextBoxFor(x => x.customerGender, new { @class = "form-control", @required = "" })
+		</div>
+		<div>
+			<label>Adres</label>
+			@Html.TextBoxFor(x => x.customerAdress, new { @class = "form-control", @required = "" })
+		</div>
+		<br />
+		<div>
+			<a href="/Home/Index/"><button class="btn btn-primary">Kaydet</button></a>
+		</div>
+
+	</form>
+</div>
